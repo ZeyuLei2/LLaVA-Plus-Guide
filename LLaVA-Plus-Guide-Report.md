@@ -1,6 +1,6 @@
 To run LLaVA-Plus on your own device, follow readme.md on LLaVA-Plus-codebase, but you might encounter some error, here is how to fix them.
 
-1.There might be some caused by wrong working directory
+1.There might be some error caused by wrong working directory
 
 most times, we run controller or workers in directory `LLaVA-Plus/`, except these:
 
