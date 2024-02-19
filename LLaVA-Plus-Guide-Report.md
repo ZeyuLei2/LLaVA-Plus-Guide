@@ -43,4 +43,5 @@ change `tag2text.ram` into `tag2text_caption`
 
 change `swin_l` into `swin_b`
 
+10. If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
 
