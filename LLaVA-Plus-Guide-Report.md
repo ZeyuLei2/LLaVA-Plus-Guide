@@ -31,4 +31,16 @@ the line
 `from Tag2Text import inference_ram
 change `inference_ram` into `inference`
 
+9.In `LLaVA-Plus/recognize-anything/ram_worker.py`
+
+change `from Tag2Text.models import tag2text' into 'from Tag2Text.models.tag2text import tag2text_caption`
+
+in sentence `self.ram_model = tag2text.ram(pretrained=model_path,
+                                        image_size=384,
+                                        vit='swin_l')`
+
+change `tag2text.ram` into `tag2text_caption`  
+
+change `swin_l` into `swin_b`
+
 
