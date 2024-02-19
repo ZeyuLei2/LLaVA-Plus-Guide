@@ -27,8 +27,8 @@ to point out controller-address and model-path(if any)
 7.Use `git clone https://github.com/fenneishi/Tag2Text.git` to download Tag2Text.git yourself
 
 8.In `ram_worker.py`  
-the line
-`from Tag2Text import inference_ram
+in the line
+`from Tag2Text import inference_ram`
 change `inference_ram` into `inference`
 
 9.In `LLaVA-Plus/recognize-anything/ram_worker.py`
