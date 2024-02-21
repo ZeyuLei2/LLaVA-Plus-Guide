@@ -14,7 +14,7 @@ under path `LLaVA-Plus/Segment-Everything-Everywhere-All-At-Once/`
 
 2.Download `groundingdino_swint_ogc.pth` from https://huggingface.co/ShilongLiu/GroundingDINO/blob/main/groundingdino_swint_ogc.pth 
 
-and put it under LLaVA-Plus/Grounded-Segment-Anything/GroundingDINO
+and put it under LLaVA-Plus/Grounded-Segment-Anything/
 
 3.run tool workers with instruction like
 `python /home/zeyu/workspace/LLaVA-Plus/recognize-anything/ram_worker.py  --controller-address http://localhost:20001 --model-path  /mnt/data0/zeyu/tag2text_swin_14m.pth`
