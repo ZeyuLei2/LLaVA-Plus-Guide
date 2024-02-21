@@ -29,12 +29,10 @@ to point out controller-address and model-path(if any)
 
 6.Use `git clone https://github.com/fenneishi/Tag2Text.git` to download Tag2Text.git yourself
 
-7.In `ram_worker.py`  
+7.In `LLaVA-Plus/recognize-anything/ram_worker.py`  
 in the line
 `from Tag2Text import inference_ram`
 change `inference_ram` into `inference`
-
-8.In `LLaVA-Plus/recognize-anything/ram_worker.py`
 
 change `from Tag2Text.models import tag2text` into `from Tag2Text.models.tag2text import tag2text_caption`
 
@@ -45,6 +43,8 @@ in sentence `self.ram_model = tag2text.ram(pretrained=model_path,
 change `tag2text.ram` into `tag2text_caption`  
 
 change `swin_l` into `swin_b`
+
+8.pip install transformers
 
 9. If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
 
