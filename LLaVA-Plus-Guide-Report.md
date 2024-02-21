@@ -48,5 +48,8 @@ change `swin_l` into `swin_b`
 
 9.Download `tag2text_swin_14m.pth` from https://huggingface.co/spaces/xinyu1205/recognize-anything/blob/main/tag2text_swin_14m.pth
 
-10.If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
+10.In `LLaVA-Plus/EasyOCR/ocr_worker.py`
+in the line `from Tag2Text import inference_ram` change `inference_ram` into `inference`
+
+11.If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
 
