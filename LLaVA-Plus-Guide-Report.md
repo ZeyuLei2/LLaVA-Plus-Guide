@@ -55,3 +55,5 @@ in the line `from Tag2Text import inference_ram` change `inference_ram` into `in
 
 12.If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
 
+13.If the answer is not stable, change `--model-list-mode` into `once`
+
