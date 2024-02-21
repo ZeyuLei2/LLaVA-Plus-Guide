@@ -24,19 +24,17 @@ to point out controller-address and model-path(if any)
 
 4.copy `LLaVA-Plus/Grounded-Segment-Anything/GroundingDINO/demo` to `LLaVA-Plus/Grounded-Segment-Anything/segment_anything`
 
-5.Download `sam_vit_h_4b8939.pth` yourself and put it under path `LLaVA-Plus/Grounded-Segment-Anything/`
-
-6.The path of ram codebase is wrong, use 
+5.The path of ram codebase is wrong, use 
 `git clone https://github.com/xinyu1205/recognize-anything.git`
 
-7.Use `git clone https://github.com/fenneishi/Tag2Text.git` to download Tag2Text.git yourself
+6.Use `git clone https://github.com/fenneishi/Tag2Text.git` to download Tag2Text.git yourself
 
-8.In `ram_worker.py`  
+7.In `ram_worker.py`  
 in the line
 `from Tag2Text import inference_ram`
 change `inference_ram` into `inference`
 
-9.In `LLaVA-Plus/recognize-anything/ram_worker.py`
+8.In `LLaVA-Plus/recognize-anything/ram_worker.py`
 
 change `from Tag2Text.models import tag2text` into `from Tag2Text.models.tag2text import tag2text_caption`
 
@@ -48,5 +46,5 @@ change `tag2text.ram` into `tag2text_caption`
 
 change `swin_l` into `swin_b`
 
-10. If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
+9. If you encounter `NETWORK ERROR DUE TO HIGH TRAFFIC. PLEASE REGENERATE OR REFRESH THIS PAGE. (error_code: 1)` on UI, restart model worker and gradio web server
 
